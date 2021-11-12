@@ -1,0 +1,39 @@
+div.posts {
+  width: 800px;
+  margin: auto;
+}
+
+div.error {
+  background-color: red;
+  padding: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+div.post {
+  outline: 2px solid black;
+  padding: 25px;
+  display: block;
+  margin-bottom: 25px;
+}
+
+div.field {
+  margin-bottom: 10px;
+}
+
+div.add-post-label {
+  width: 100%;
+}
+
+input.add-post {
+  width: 100%;
+}
+
+textarea.add-post {
+  width: 100%;
+}
+
+form.add-post {
+  outline: 2px dashed black;
+  padding: 25px;
+}
