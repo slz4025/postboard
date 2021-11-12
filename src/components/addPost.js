@@ -45,7 +45,7 @@ export default class AddPost extends Component {
     });
 
     if (resp.status === 200) {
-      this.props.setPost([...this.props.post, postData]);
+      this.props.setPosts([...this.props.posts, postData]);
     }
     else {
       this.props.setError("Could not add post."); 

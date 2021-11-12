@@ -3,6 +3,7 @@ import './style.css';
 const Post = (params) => {
   const { post } = params;
 
+  const date = post.date ? new Date(post.date) : new Date();
   return (
     <div key={post.id} class="post">
       <h2>{post.title}</h2>
@@ -11,7 +12,7 @@ const Post = (params) => {
       </p>
       <p>{post.content}</p>
       <p>
-        <em>Published {new Date(post.date).toLocaleString()}</em>
+        <em>Published {date.toLocaleString()}</em>
       </p>
     </div>
   );
